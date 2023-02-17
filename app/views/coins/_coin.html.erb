@@ -1,0 +1,18 @@
+<div id="<%= dom_id coin %>">
+
+  <p>
+    <strong><%= Coin.human_attribute_name(:description) %></strong>
+    <%= coin.description %>
+  </p>
+
+  <p>
+    <strong><%= Coin.human_attribute_name(:acronym) %></strong>
+    <%= coin.acronym %>
+  </p>
+
+  <p>
+    <strong><%= Coin.human_attribute_name(:url_image) %></strong>
+     <%= image_tag "bitcoin.png", height: 25, width: 25 %>
+  </p>
+
+</div>

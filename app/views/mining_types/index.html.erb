@@ -1,0 +1,37 @@
+<p style="color: green"><%= notice %></p>
+
+<!--<h1>Mining types</h1>
+
+<div id="mining_types">
+  <% @mining_types.each do |mining_type| %>
+    <%= render mining_type %>
+    <p>
+      <%= link_to t("links.show"), mining_type %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to t("links.new"), new_mining_type_path %>-->
+
+
+<div class="col-lg-8 mx-auto">
+  <h1>Mining Types</h1>
+  <%= link_to "New Mining Types", new_mining_type_path, class: "btn btn-primary btn-md mb-3"%> 
+  <div id="mining_types">
+    <%  @mining_types.each do |mining_type|%>
+      <div class="card shadow mb-3">
+        <div class="card-body">
+          <%= render mining_type %>
+          <p>
+            <%= link_to "Show this Mining Type", mining_type, class: "btn btn-primary" %>
+          </p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+    <div>
+      <%= link_to "Voltar", root_path, class: "btn btn-primary btn-md mb3" %>
+    <div>
+</div>
+
+

@@ -1,0 +1,12 @@
+pt-BR:
+  current_locale: "Português do Brasil"
+  welcome: "Seja Bem-Vindo!"
+  welcome_msg: "Este é o Crypto Wallet, um app para controlar seus investimentos."
+  description: "Para começar, seleciona uma das opções abaixo." 
+  hello: "Olá Mundo!"
+  links:
+    edit: "Editar"
+    show: "Mostrar"
+    delete: "Apagar"
+    new: "Nova"
+    back: "Voltar"

@@ -1,0 +1,69 @@
+<p style="color: green"><%= notice %></p>
+<!-- 
+<h2><%= cookies[:curso] %></h2>
+<h2><%= session[:curso] %></h2> -->
+
+<div class="col-lg-8 mx-auto">
+  <h1>Coins</h1>
+  <%= link_to "New coin", new_coin_path, class: "btn btn-primary btn-md mb-3"%> 
+  <div id="coins">
+    <% @coins.each do |coin| %>
+      <div class="card shadow mb-3">
+        <div class="card-body">
+          <%= render coin %>
+          <p>
+            <%= link_to "Show this coin", coin, class: "btn btn-primary" %>
+          </p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div>
+      <%= link_to "Voltar", root_path, class: "btn btn-primary btn-md mb3" %>
+  <div>
+</div>
+
+
+
+<!--
+
+<h1>Coins</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th colspan="1"> </th>
+      <th>Sigla</th>
+      <th colspan="1"> </th>
+      <th>Image</th>
+      <th colspan="3"> </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @coins.each do |coin| %>
+    <tr>
+      <td> <%= coin.description %> </td>
+      <td colspan="2"> </td>
+      <td> <%= coin.acronym %> </td>
+      <td colspan="1"> </td>
+
+      <% if coin.url_image %>
+      <td><%#= image_tag coin.url_image, size: "25" %> </td>
+      <% end %>
+
+      <td colspan="1"> </td>
+      <td> <%= link_to 'Show', coin %> </td>
+      <td> <%= link_to 'Edit', edit_coin_path(coin) %></td>
+      <td> <%= link_to 'Destroy', coin, method: :delete, data: {confirm: 'Tem certeza? '} %></td>
+    </tr>
+    <% end %>
+  </tbody>
+<table/>
+
+<br>
+
+<%= link_to 'new Coin', new_coin_path %> 
+
+-->

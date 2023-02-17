@@ -1,0 +1,22 @@
+<!--<p style="background-image: url('/assets/rails.png');">
+<div class="jumbotron" style="background-color: lightgray;">
+  <h1 class="display-4"><%= t('welcome') %></h1>
+  <p class="lead"><%= t('welcome_msg') %></p>
+  <hr class="my-4">
+  <p><%= t('description') %></p>
+  <%= render "menu" %>
+</div> -->
+
+
+<div class="col-lg-8 mx-auto">
+    <div class="card shadow mb-3">
+      <div class="card-header">
+        <h1 class="cart-title"><%= t('welcome') %></h1>
+      </div>
+      <div class="card-body mb-3" >
+        <h5 class="card-title mb-3"><%= t('welcome_msg') %></h5>
+        <%= render "menu" %>
+      </div>
+    </div>
+</div>
+
